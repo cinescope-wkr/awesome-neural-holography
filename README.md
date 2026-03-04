@@ -1,6 +1,6 @@
-# awesome-holography
+# awesome-neural-holography
 
-A curated list of resources on holographic displays.
+A curated list of resources on neural holographic displays.
 
 ## Disclaimer
 
