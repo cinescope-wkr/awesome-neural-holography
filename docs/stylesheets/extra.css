@@ -4,6 +4,9 @@
     radial-gradient(circle at top right, rgba(34, 211, 238, 0.16), transparent 28%),
     linear-gradient(180deg, #06101c 0%, #0d1b2a 100%);
   --holo-hero-fg: #f4fbff;
+  --holo-nav-hover: rgba(8, 145, 178, 0.08);
+  --holo-nav-active: rgba(8, 145, 178, 0.14);
+  --holo-nav-border: rgba(148, 163, 184, 0.18);
 }
 
 .md-typeset .holo-hero {
@@ -84,6 +87,53 @@
   color: var(--md-default-fg-color--light);
   margin: 1rem 0;
   padding-left: 1rem;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  padding-block: 0.4rem 0.9rem;
+}
+
+.md-nav--primary .md-nav__title,
+.md-nav--secondary .md-nav__title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding-block: 0.8rem 0.55rem;
+}
+
+.md-nav--primary .md-nav__list > .md-nav__item,
+.md-nav--secondary .md-nav__list > .md-nav__item {
+  margin: 0.12rem 0;
+}
+
+.md-nav--primary .md-nav__link,
+.md-nav--secondary .md-nav__link {
+  border-radius: 0.65rem;
+  margin-inline: 0.35rem;
+  padding: 0.34rem 0.7rem;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.md-nav--primary .md-nav__link:hover,
+.md-nav--primary .md-nav__link:focus,
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link:focus {
+  background: var(--holo-nav-hover);
+}
+
+.md-nav--primary .md-nav__item--active > .md-nav__link,
+.md-nav--secondary .md-nav__item--active > .md-nav__link {
+  background: var(--holo-nav-active);
+  font-weight: 600;
+}
+
+.md-sidebar--primary .md-nav--primary > .md-nav__list,
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list {
+  border-left: 1px solid var(--holo-nav-border);
+  margin-left: 0.35rem;
+  padding-left: 0.3rem;
 }
 
 .md-typeset .md-button {

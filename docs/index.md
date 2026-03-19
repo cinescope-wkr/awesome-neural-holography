@@ -23,6 +23,20 @@ research groups, and publication venues.
 This documentation site is intentionally lightweight. The homepage is curated for browsing,
 while the long-form research list stays synchronized with the repository sources.
 
+## Why This Exists
+
+**Neural holography is an inherently interdisciplinary field** where optics, graphics, imaging,
+vision, display systems, fabrication, perception, and machine learning all overlap. In practice,
+that means relevant ideas often live in different venues, use different terminology, and are easy
+to miss if you only follow one community.
+
+**This project tries to make those connections easier to inherit and extend.** The hope is that a
+shared reading map can support a small [Cambrian explosion](https://en.wikipedia.org/wiki/Cambrian_explosion)
+of reusable methods, sharper comparisons, and more cross-pollination between researchers who would
+otherwise stay separated by disciplinary boundaries. In that sense, it is also a reminder that the
+[wonderland](https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf) Ivan Sutherland
+imagined in *The Ultimate Display* is still waiting for us.
+
 ## What You Will Find Here
 
 <div class="grid cards" markdown="1">

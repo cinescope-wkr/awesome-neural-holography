@@ -9,16 +9,20 @@
   </a>
 </p>
 
-A curated list of resources on **`neural holographic displays`**.
+A curated list of resources on **neural holographic displays**.
 
 ## Notice 
 > [!NOTE]
-> This repository is an ongoing personal survey about the current landscape of holographic display researchs with AI. The original resources was partly adapted by Brian Chao's **`awesome-neural-holography`** project. I would like to thank Brian Chao and the authors of the following works for providing great ideas on holography display research. 
+> This repository is an ongoing personal survey about the current landscape of holographic display researchs with AI. The original resources were partly adapted from [Brian Chao](https://bchao1.github.io)'s [`awesome-holography`](https://github.com/bchao1/awesome-holography) project. I would like to thank [Brian Chao](https://bchao1.github.io) and the authors of the following works for providing great ideas on holography display research.
 >
 > **Fork maintainer**: [Jinwoo Lee](https://cinescope-wkr.github.io) (cinescope@kaist.ac.kr)
 
-- [Neural Holography with Camera-in-the-loop Training](https://www.computationalimaging.org/publications/neuralholography/) (Peng et al. 2020)
-- [Learned Hardware-in-the-loop Phase Retrieval for Holographic Near-Eye Displays](https://light.princeton.edu/publication/hil-holography/) (Chakravarthula et al. 2020)
+## Overview
+**Neural holography is an inherently interdisciplinary field** where wave optics, computer graphics, computational imaging, vision, display hardware, perception, fabrication, and machine learning constantly meet. That breadth is part of what makes the area exciting, but it also means that useful ideas are often scattered across communities that do not always share the same language, venues, or evaluation habits.
+
+**This list is an attempt to make those connections easier to see.** The goal is not only to archive papers, but to help researchers from different backgrounds inherit, reinterpret, and extend one another's ideas. Ideally, that kind of shared map can support a small [Cambrian explosion](https://en.wikipedia.org/wiki/Cambrian_explosion) of reusable methods, clearer comparisons, and new experiments that would be harder to discover from within any single silo. 
+
+In that sense, it is also a reminder that the [wonderland](https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf) Ivan Sutherland imagined in *The Ultimate Display* is still waiting for us.
 
 ## How to Use This List
 This README works best as a reading map: start from the question you care about, then dive into the corresponding paper clusters.
@@ -275,8 +279,11 @@ Workshop-specific entries can be added here as the list grows.
 - [Could Deep Learning Improve Visual Quality in Holographic Displays?](https://www.youtube.com/watch?v=lbgRke4H_HA)(Optica, 2022)
 
 ## Contributing
-If you want to contribute to this list, please 
-1. [Created a new issue](https://github.com/bchao1/awesome-holography/issues)
-2. Explain in the issue why the paper / book / talk is relevant, and under which category should the resource be placed.
+This list becomes more useful when it reflects multiple research cultures at once. Contributions that connect optics, graphics, vision, display systems, perception, fabrication, HCI, or machine learning perspectives are especially valuable.
+
+If you want to contribute to this list, please
+1. [Create a new issue](https://github.com/cinescope-wkr/awesome-neural-holography/issues)
+2. Explain why the paper, book, talk, dataset, lab, or tool is relevant and where it should be placed.
+3. If helpful, mention which community it comes from and what other thread in the list it helps connect.
    
 Thank you!
