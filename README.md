@@ -1,17 +1,45 @@
 # awesome-neural-holography
 
+<p align="center">
+  <a href="https://cinescope-wkr.github.io/awesome-differentiable-holography/">
+    <img src="https://img.shields.io/badge/Documentation-online-blue" alt="Documentation">
+  </a>
+  <a href="https://github.com/cinescope-wkr/awesome-differentiable-holography/actions/workflows/deploy-docs.yml">
+    <img src="https://github.com/cinescope-wkr/awesome-differentiable-holography/actions/workflows/deploy-docs.yml/badge.svg" alt="Docs Deploy">
+  </a>
+</p>
+
 A curated list of resources on **`neural holographic displays`**.
 
 ## Notice 
 > [!NOTE]
-> This repository is a personal survey about the current landscape of holographic display researchs with AI. The original resources was partly adapted by Brian Chao's **`awesome-neural-holography`** project. I would like to thank Brian Chao and the authors of the following works for providing great ideas on holography display research. 
+> This repository is an ongoing personal survey about the current landscape of holographic display researchs with AI. The original resources was partly adapted by Brian Chao's **`awesome-neural-holography`** project. I would like to thank Brian Chao and the authors of the following works for providing great ideas on holography display research. 
 >
-> **Fork maintainer**: [Jinwoo Lee](cinescope-wkr.github.io) (cinescope@kaist.ac.kr)
+> **Fork maintainer**: [Jinwoo Lee](https://cinescope-wkr.github.io) (cinescope@kaist.ac.kr)
 
 - [Neural Holography with Camera-in-the-loop Training](https://www.computationalimaging.org/publications/neuralholography/) (Peng et al. 2020)
 - [Learned Hardware-in-the-loop Phase Retrieval for Holographic Near-Eye Displays](https://light.princeton.edu/publication/hil-holography/) (Chakravarthula et al. 2020)
 
+## How to Use This List
+This README works best as a reading map: start from the question you care about, then dive into the corresponding paper clusters.
+
+| Goal | Start here | Then continue with |
+| --- | --- | --- |
+| Build intuition for the field | [Background and Theory](#background-and-theory) | [Survey Papers](#survey-papers), [Learned Propagation Model Methods](#learned-propagation-model-methods) |
+| Understand CGH algorithm families | [Traditional Heuristic Methods](#traditional-heuristic-methods) | [Iterative Methods](#iterative-methods), [Learned Hologram Synthesis Methods](#learned-hologram-synthesis-methods) |
+| Focus on hardware and display constraints | [Topics in Holographic Display Systems](#topics-in-holographic-display-systems) | [Perception-related Research](#perception-related-research), [Small Form-factor Displays](#small-form-factor-displays) |
+| Map the research community | [Labs and Researchers](#labs-and-researchers) | [Journals, Conferences, and Workshops](#journals-conferences-and-workshops), [Talks, Lectures, Tutorials, and Videos](#talks-lectures-tutorials-and-videos) |
+
+## Reading Conventions
+- `(*Author et al. Year | Venue, Publisher*)` shows the publication context at a glance.
+- Short descriptions are added only when the title alone does not make the main contribution obvious.
+- `CGH` means computer-generated holography, `CITL` means camera-in-the-loop, `SLM` means spatial light modulator, and `HOE` means holographic optical element.
+- `Labs and Researchers`, `Journals, Conferences, and Workshops`, and `Videos` are best treated as reference appendices after you have a method-level overview.
+
 ## Table of Contents
+<details>
+<summary>Open the full table of contents</summary>
+
 - [Background, Theory, and Survey](#background-theory-and-survey)
 - [Computer Generated Holography (CGH) Algorithms](#computer-generated-holography-cgh-algorithms)
     - [Traditional Heuristic Methods](#traditional-heuristic-methods)
@@ -20,13 +48,21 @@ A curated list of resources on **`neural holographic displays`**.
     - [Learned Hologram Synthesis Methods](#learned-hologram-synthesis-methods)
 - [Topics in Holography Display Systems](#topics-in-holographic-display-systems)
     - [Speckle Noise Reduction](#speckle-noise-reduction)
+    - [Perception-related Research](#perception-related-research)
     - [Etendue Expansion](#etendue-expansion)
     - [Holographic Optical Elements (HOEs)](#holographic-optical-elements-hoes)
     - [Small Form-factor Displays](#small-form-factor-displays)
     - [Compression](#compression)
-    - [Zero or Higher Diffraction Orders Optimization](#zero-or-high-diffraction-orders-optimization)
+    - [Zero or Higher Diffraction Orders Optimization](#zero-or-higher-diffraction-orders-optimization)
 - [Labs and Researchers](#labs-and-researchers)
-- [Talks, Lectures, and Tutorials](#talks-lectures-and-tutorials)
+- [Journals, Conferences, and Workshops](#journals-conferences-and-workshops)
+    - [Journals](#journals)
+    - [Conferences](#conferences)
+    - [Workshops](#workshops)
+- [Talks, Lectures, Tutorials, and Videos](#talks-lectures-tutorials-and-videos)
+    - [Videos](#videos)
+
+</details>
 
 ## Background, Theory, and Survey
 ### Background and Theory
@@ -40,6 +76,12 @@ A curated list of resources on **`neural holographic displays`**.
 ## Computer Generated Holography (CGH) Algorithms
 
 This section mainly focuses on the algorithmic aspect of holographic display systems.
+
+Quick map:
+- `Traditional Heuristic Methods`: closed-form, geometry-driven, or display-inspired baselines.
+- `Iterative Methods`: optimize holograms by repeatedly propagating wavefields and enforcing constraints.
+- `Learned Propagation Model Methods`: learn the mismatch between ideal propagation and real hardware.
+- `Learned Hologram Synthesis Methods`: directly predict holograms or intermediate wavefields with neural networks.
 
 ### Traditional Heuristic Methods
 
@@ -115,6 +157,17 @@ These works often assume a naive wave propagation model (i.e. the angular spectr
 
 ## Topics in Holographic Display Systems
 
+Use this section when the algorithm is not the whole story and the display system itself becomes the bottleneck.
+
+Quick map:
+- `Speckle Noise Reduction`: reduce coherent artifacts and improve image quality.
+- `Perception-related Research`: optimize the hologram for what observers actually see and accommodate to.
+- `Etendue Expansion`: trade off field of view and eyebox size.
+- `Holographic Optical Elements (HOEs)`: use holographic optics inside the display stack.
+- `Small Form-factor Displays`: reduce bulk for practical AR/VR hardware.
+- `Compression`: lower bandwidth and computation costs.
+- `Zero or Higher Diffraction Orders Optimization`: manage unwanted orders or exploit higher ones.
+
 <!-- Reducing speckle noise: 1. Superposition 2. Spatial coherence construction 3. Temporal (spectral) coherence destruction -->
 ### Speckle Noise Reduction
 - [Strategies for reducing speckle noise in digital holography](https://www.nature.com/articles/s41377-018-0050-9) (*Bianco et al. 2018 | Light: Sciene and Applications, Nature*)
@@ -129,6 +182,15 @@ Speckle noise is a result of interference among coherent waves, which is often p
 - [Holographic head-mounted display with RGB light emitting diode light source](https://opg.optica.org/oe/fulltext.cfm?uri=oe-22-6-6526&id=281866) (*Moon et al. 2014 | Optics Express, Optica*)
 #### Others
 - [Optimizing image quality for holographic near-eye displays with Michelson Holography](https://opg.optica.org/optica/fulltext.cfm?uri=optica-8-2-143&id=446984) (*Choi et al. 2021 | Optica, Optica*) uses 2 SLMs to correct for the unwanted interference caused by undiffracted light in single-SLM settings. A CITL procedure is also deployed to simultaneously optimize 2 SLM patterns.
+
+### Perception-related Research
+Perception-aware holography work studies which image errors matter to human observers, how focus and accommodation cues should be optimized, and how gaze-contingent or metameric losses can trade exact reconstruction for better visual quality.
+
+- [Toward the next-generation VR/AR optics: a review of holographic near-eye displays from a human-centric perspective](https://opg.optica.org/optica/fulltext.cfm?uri=optica-7-11-1563&id=442336) (*Chang et al. 2020 | Optica, Optica*)
+- [Accommodative Holography: Improving Accommodation Response for Perceptually Realistic Holographic Displays](https://drive.google.com/drive/folders/1K0DfdG75kcz_xU6BF9PDwzevhp1t_UmO) (*Kim et al. 2022 | SIGGRAPH, ACM*)
+- [Metameric Varifocal Holograms](https://github.com/complight/metameric_holography) (*Walton et al. 2022 | VR, IEEE*)
+- [Realistic Defocus Blur for Multiplane Computer-Generated Holography](https://arxiv.org/abs/2205.07030) (*Kavakli et al. 2021*)
+- [Gaze-Contingent Retinal Speckle Suppression for Perceptually-Matched Foveated Holographic Displays](https://www.computer.org/csdl/journal/tg/2021/11/09523842/1wpqr1B6wA8) (*Chakravarthula et al. 2021 | TVCG, IEEE*)
 
 ### Etendue Expansion
 The product of the field of view (FoV) and the eyebox size, the etendue, is limited by the number of pixels on the SLM. Hence, there is an inherent tradeoff between these two properties.
@@ -156,25 +218,70 @@ Bulky headsets hamper the development of AR/VR. **Reducing the size** of hologra
 - [Neural compression for hologram images and videos](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X-FQZ8QAAAAJ&sortby=pubdate&citation_for_view=X-FQZ8QAAAAJ:3fE2CSJIrl8C)(*Shi et al. 2022 | Optics Letters, Optica*)
 
 ### Zero or Higher Diffraction Orders Optimization
-- [Unfiltered holography: optimizing high diffraction orders without optical filtering for compact holographic displays](https://opg.optica.org/ol/fulltext.cfm?uri=ol-46-23-5822&id=464968) g(*Gopakumar et al. 2021 | Optics Letters, Optica*) incorporated higher diffraction orders into the CGH optimization procedure to remove the 4f filtering system often used in holographic displays, thus reducing the display form factor.
+- [Unfiltered holography: optimizing high diffraction orders without optical filtering for compact holographic displays](https://opg.optica.org/ol/fulltext.cfm?uri=ol-46-23-5822&id=464968) (*Gopakumar et al. 2021 | Optics Letters, Optica*) incorporated higher diffraction orders into the CGH optimization procedure to remove the 4f filtering system often used in holographic displays, thus reducing the display form factor.
 - Elimination of a zero-order beam induced by a pixelated spatial light modulator for holographic projection (*Zhang et al. 2009 | Applied Optics, Optica*)
 - Holographic projection of arbitrary light patterns with a suppressed zero-order beam
 - Effect of spurious diffraction orders in arbitrary multifoci patterns produced via phase-only holograms
 - Off-axis camera-in-the-loop optimization with noise reduction strategy for high-quality hologram generation (*Chen et al. 2022 | Optics Letters, Optica*)
 
 ## Labs and Researchers
+### Academic Labs
 - [Computational Imaging Lab, Stanford University](https://www.computationalimaging.org)
 - [Computational Imaging Lab, Princeton University](https://light.princeton.edu)
+- [Computational Imaging, Carnegie Mellon University](https://imaging.cs.cmu.edu)
+- [Computational Design & Fabrication Group, Massachusetts Institute of Technology](https://cdfg.mit.edu)
+- [Camera Culture, MIT Media Lab](https://www.media.mit.edu/groups/camera-culture/overview/)
 - [Computational Biophotonics Laboratory, UNC Chapel Hill](http://www.nicolaspegard.com/index.php)
 - [Graphics and Virtual Reality Group, UNC Chapel Hill](https://telepresence.web.unc.edu)
 - [Computational Light Laboratory, University College London](https://complightlab.com)
 - [Computational Imaging Group, KAUST](https://vccimaging.org/publications.html)
+- [Computational Imaging Group, POSTECH](https://sites.google.com/view/shbaek/home)
+- [Reality Lab, Seoul National University](https://reality.snu.ac.kr)
 - [Optical Engineering and Quantum Electronics Lab, Seoul National University](http://oeqelab.snu.ac.kr)
-- [NVIDIA Research](https://www.nvidia.com/en-us/research/)
-- [Meta Research](https://research.facebook.com)
+- [WeLight Lab, The University of Hong Kong](https://www.eee.hku.hk/~evanpeng/)
+- [HoloLab, Tsinghua University](https://faculty.dpi.tsinghua.edu.cn/caoliangcai/en/index.htm)
 
-## Talks, Lectures, and Tutorials
+### Industry Research Groups
+- [NVIDIA Research](https://www.nvidia.com/en-us/research/)
+- [Display Systems Research, Meta Reality Labs](https://about.meta.com/realitylabs/)
+- [Holographic Display Research Team, Samsung Advanced Institute of Technology](https://semiconductor.samsung.com/sait/)
+
+## Journals, Conferences, and Workshops
+This section tracks frequently referenced publication venues in holography and neural display research.
+
+### Journals
+- ACM Transactions on Graphics (TOG)
+- Light: Science and Applications
+- Nature
+- Nature Photonics
+- Nature Communications
+- Optica
+- Optics Express
+- Science 
+- Science Advances
+
+### Conferences
+- IEEE VR
+- SIGGRAPH
+- SIGGRAPH Asia
+- ICCP 
+
+### Workshops
+Workshop-specific entries can be added here as the list grows.
+
+## Talks, Lectures, Tutorials, and Videos
+### Videos
+- [Design of Holographic Display Systems based on Artificial Intelligence](https://www.youtube.com/watch?v=Xcg2krkxk3I&t=4253s) (Suyeon Choi, Silicon Valley ACM SIGGRAPH 2022)
 - [Could Deep Learning Improve Visual Quality in Holographic Displays?](https://www.youtube.com/watch?v=lbgRke4H_HA)(Optica, 2022)
+
+## Local Docs
+Serve the synced MkDocs site locally with `make docs-serve`.
+
+Build the static site with `make docs-build`.
+
+The online docs are published at `https://cinescope-wkr.github.io/awesome-differentiable-holography/`.
+
+The docs site uses Material for MkDocs with a custom landing page, while the main reading list and subtopic pages still read from `README.md` and `subtopics/*.md` through `mkdocs_hooks.py`.
 
 ## Contributing
 If you want to contribute to this list, please 

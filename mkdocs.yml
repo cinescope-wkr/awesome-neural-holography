@@ -1,0 +1,46 @@
+site_name: Awesome Neural Holography
+site_description: A curated list of resources on neural holographic displays.
+site_url: https://cinescope-wkr.github.io/awesome-differentiable-holography/
+repo_url: https://github.com/cinescope-wkr/awesome-differentiable-holography
+repo_name: cinescope-wkr/awesome-differentiable-holography
+docs_dir: docs
+site_dir: site
+plugins:
+  - search
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Reading List: readme.md
+  - Subtopics:
+      - Holographic Projection: subtopics/holographic_projection.md
+      - Speckle Reduction: subtopics/speckle_reduction.md
+      - Zero-order Diffraction Removal: subtopics/zero_orders.md
+hooks:
+  - mkdocs_hooks.py
+watch:
+  - README.md
+  - subtopics
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
