@@ -17,6 +17,7 @@ display constraints, and the research threads that shape the field.
 [Start with the full survey](readme.md){ .md-button .md-button--primary }
 [Browse methods by section](reading-list/index.md){ .md-button }
 [Find labs and researchers](reading-list/labs-and-researchers.md){ .md-button }
+[See the codex graph model](codex/graph.md){ .md-button }
 
 </section>
 
@@ -68,6 +69,12 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
   ---
 
   Reusable libraries and frameworks that turn optics and holography papers into working research code.
+
+- **[Codex graph](codex/graph.md)**
+
+  ---
+
+  A design for turning the survey into a typed knowledge graph without losing readable long-form structure.
 
 - **[Venues and talks](reading-list/venues-and-videos.md)**
 

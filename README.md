@@ -15,7 +15,19 @@ A curated list of resources on **neural holographic displays**.
 > [!NOTE]
 > This repository is an ongoing personal survey about the current landscape of holographic display researchs with AI. The original resources were partly adapted from [Brian Chao](https://bchao1.github.io)'s [`awesome-holography`](https://github.com/bchao1/awesome-holography) project. I would like to thank [Brian Chao](https://bchao1.github.io) and the authors of the following works for providing great ideas on holography display research.
 >
-> **Fork maintainer**: [Jinwoo Lee](https://www.linkedin.com/in/jinwoo-lee-6424281aa/) | [HoloDDD Lab](http://www.holoddd.com) (cinescope@kaist.ac.kr)
+> **Fork maintainer**: [Jinwoo Lee](https://www.linkedin.com/in/jinwoo-lee-6424281aa/) (cinescope@kaist.ac.kr)
+
+## Contributing
+This codex becomes more useful when it reflects multiple research cultures at once. Contributions
+that connect optics, graphics, vision, display systems, perception, fabrication, HCI, or machine
+learning perspectives are especially valuable.
+
+## Contribution Guide
+If you want to contribute to this list, please
+
+1. [Create a new issue](https://github.com/cinescope-wkr/awesome-neural-holography/issues)
+2. Explain why the paper, book, talk, dataset, lab, or tool is relevant and where it should be placed.
+3. If helpful, mention which community it comes from and what other thread in the list it helps connect.
 
 ## Overview
 **Neural holography is an inherently interdisciplinary field** where wave optics, computer graphics, computational imaging, vision, display hardware, perception, fabrication, and machine learning constantly meet. That breadth is part of what makes the area exciting, but it also means that useful ideas are often scattered across communities that do not always share the same language, venues, or evaluation habits.
@@ -44,6 +56,8 @@ This README works best as a codex: start from the question you care about, then 
 <details>
 <summary>Open the full table of contents</summary>
 
+- [Contributing](#contributing)
+- [Contribution Guide](#contribution-guide)
 - [Background, Theory, and Survey](#background-theory-and-survey)
 - [Computer Generated Holography (CGH) Algorithms](#computer-generated-holography-cgh-algorithms)
     - [Traditional Heuristic Methods](#traditional-heuristic-methods)
@@ -261,7 +275,7 @@ Open-source software is often where algorithmic ideas, optical models, and hardw
 
 - [PADO](https://github.com/shwbaek/pado): a PyTorch-based differentiable optics library for wave propagation, optical modeling, and inverse design workflows.
 - [PADO Hologram](https://github.com/cinescope-wkr/pado-hologram): a higher-level holography framework built on top of PADO for CGH experiments and display-aware workflows.
-- [HoloTorch](https://github.com/facebookresearch/holotorch): a differentiable wave-propagation and holography framework released by Meta Research.
+- [HoloTorch](https://github.com/facebookresearch/holotorch): a differentiable wave-propagation and holography framework released by Meta Reality Labs Research.
 
 ## Journals, Conferences, and Workshops
 This section tracks frequently referenced publication venues in holography and neural display research.
@@ -292,13 +306,3 @@ This section tracks frequently referenced publication venues in holography and n
 ### Videos
 - [Design of Holographic Display Systems based on Artificial Intelligence](https://www.youtube.com/watch?v=Xcg2krkxk3I&t=4253s) (Suyeon Choi, Silicon Valley ACM SIGGRAPH 2022)
 - [Could Deep Learning Improve Visual Quality in Holographic Displays?](https://www.youtube.com/watch?v=lbgRke4H_HA)(Optica, 2022)
-
-## Contributing
-This list becomes more useful when it reflects multiple research cultures at once. Contributions that connect optics, graphics, vision, display systems, perception, fabrication, HCI, or machine learning perspectives are especially valuable.
-
-If you want to contribute to this list, please
-1. [Create a new issue](https://github.com/cinescope-wkr/awesome-neural-holography/issues)
-2. Explain why the paper, book, talk, dataset, lab, or tool is relevant and where it should be placed.
-3. If helpful, mention which community it comes from and what other thread in the list it helps connect.
-   
-Thank you!

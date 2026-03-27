@@ -33,6 +33,7 @@ nav:
   - Codex:
       - Full Survey: readme.md
       - Browse by Section: reading-list/index.md
+      - Codex Graph: codex/graph.md
       - Section Views:
           - Background and Survey: reading-list/background-and-survey.md
           - CGH Algorithms: reading-list/cgh-algorithms.md
