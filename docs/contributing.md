@@ -4,6 +4,9 @@ This codex becomes more useful when it reflects multiple research cultures at on
 that connect optics, graphics, vision, display systems, perception, fabrication, HCI, or machine
 learning perspectives are especially valuable.
 
+This project was adapted in part from [Brian Chao's awesome-holography](https://github.com/bchao1/awesome-holography).
+Many thanks to Brian Chao and the authors of the works collected here.
+
 ## Contribution Guide
 
 If you want to contribute to this list, please:

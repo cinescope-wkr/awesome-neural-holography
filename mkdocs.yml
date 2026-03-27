@@ -45,9 +45,7 @@ nav:
       - Holographic Projection: subtopics/holographic_projection.md
       - Speckle Reduction: subtopics/speckle_reduction.md
       - Zero-order Diffraction Removal: subtopics/zero_orders.md
-  - Contributing:
-      - Overview: contributing.md
-      - Experimental Graph Mock: codex/graph.md
+  - Contributing: contributing.md
 hooks:
   - mkdocs_hooks.py
 watch:

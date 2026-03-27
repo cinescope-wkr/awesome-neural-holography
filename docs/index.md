@@ -26,6 +26,17 @@ with physical systems. This repository collects that broader flow of ideas, and 
 docs-first way to navigate it: from foundational papers and algorithm families to system-level
 constraints, labs, software, and adjacent subtopics.
 
+## Project Status
+
+<div class="holo-status" markdown="1">
+
+- `Personal survey`
+- `Alpha`
+- Adapted in part from [Brian Chao's awesome-holography](https://github.com/bchao1/awesome-holography)
+- Maintained by [Jinwoo Lee](https://www.linkedin.com/in/jinwoo-lee-6424281aa/)
+
+</div>
+
 ## Why This Exists
 
 **Neural holography is an inherently interdisciplinary field** where optics, graphics, imaging,
