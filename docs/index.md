@@ -128,10 +128,6 @@ Start with the complete map, then branch outward by purpose.
 
 <div class="holo-acknowledgement" markdown="1">
 
-This codex began as an ongoing personal survey of neural holographic display research and was
-adapted in part from [Brian Chao's awesome-holography](https://github.com/bchao1/awesome-holography),
-whose structure and collected references helped shape this project.
-
 Many thanks to Brian Chao and to the authors, maintainers, and researchers whose papers, codebases,
 talks, and shared resources make the field easier to study. The current codex is maintained by
 [Jinwoo Lee](https://www.linkedin.com/in/jinwoo-lee-6424281aa/).
