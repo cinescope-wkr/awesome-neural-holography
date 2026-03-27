@@ -9,7 +9,7 @@ plugins:
   - search
 extra:
   generator: false
-copyright: Maintained as a growable codex for neural holography research.
+copyright: A growable codex for neural holography research. Jinwoo Lee. MIT License.
 theme:
   name: material
   favicon: assets/favicon.svg

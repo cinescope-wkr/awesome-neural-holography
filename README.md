@@ -263,7 +263,7 @@ Bulky headsets hamper the development of AR/VR. **Reducing the size** of hologra
 - [Reality Lab, Seoul National University](https://reality.snu.ac.kr)
 - [Optical Engineering and Quantum Electronics Lab, Seoul National University](http://oeqelab.snu.ac.kr)
 - [WeLight Lab, The University of Hong Kong](https://hku.welight.fun)
-- [HoloLab, Tsinghua University](https://faculty.dpi.tsinghua.edu.cn/caoliangcai/en/index.htm)
+- [HoloLab, Tsinghua University](http://www.holoddd.com)
 
 ### Industry Research Groups
 - [NVIDIA Research](https://www.nvidia.com/en-us/research/)
