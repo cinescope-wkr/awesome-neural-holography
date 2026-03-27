@@ -54,8 +54,7 @@ of reusable methods, sharper comparisons, and more cross-pollination between res
 otherwise stay separated by disciplinary boundaries.
 
 <p class="holo-philosophy-line">
-In that sense, it is also a reminder that the
-<a href="https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf">wonderland</a><br>
+The <a href="https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf">wonderland</a>
 Ivan Sutherland imagined in <em>The Ultimate Display</em> is still shimmering ahead of us,
 waiting to be built.
 </p>
@@ -66,32 +65,32 @@ waiting to be built.
 
 ## What the Codex Covers { #what-the-codex-covers }
 
-<div class="holo-card-grid">
-  <a class="holo-card" href="reading-list/cgh-algorithms.md">
+<div class="holo-card-grid holo-card-grid--home">
+  <a class="holo-card" href="reading-list/cgh-algorithms/">
     <span class="holo-card-title">CGH algorithms</span>
     <p>Traditional heuristics, iterative optimization, learned propagation models, and learned hologram synthesis methods in one place.</p>
   </a>
-  <a class="holo-card" href="reading-list/display-systems.md">
+  <a class="holo-card" href="reading-list/display-systems/">
     <span class="holo-card-title">Display-system topics</span>
     <p>Speckle reduction, perception-aware methods, etendue expansion, HOEs, form-factor work, compression, and diffraction-order control.</p>
   </a>
-  <a class="holo-card" href="reading-list/software.md">
+  <a class="holo-card" href="reading-list/software/">
     <span class="holo-card-title">Software</span>
     <p>Reusable libraries and frameworks that turn optics and holography papers into working research code.</p>
   </a>
-  <a class="holo-card" href="reading-list/labs-and-researchers.md">
+  <a class="holo-card" href="reading-list/labs-and-researchers/">
     <span class="holo-card-title">Labs and research groups</span>
     <p>A guide to the academic labs and research groups behind many of the seminal contributions in modern neural holography.</p>
   </a>
-  <a class="holo-card" href="reading-list/venues-and-communities.md">
+  <a class="holo-card" href="reading-list/venues-and-communities/">
     <span class="holo-card-title">Venues and communities</span>
     <p>Journals, conferences, workshops, and recurring research communities that shape the field.</p>
   </a>
-  <a class="holo-card" href="reading-list/media-and-resources.md">
+  <a class="holo-card" href="reading-list/media-and-resources/">
     <span class="holo-card-title">Media and resources</span>
     <p>Talks, lectures, and other supporting material that make the research landscape easier to follow.</p>
   </a>
-  <a class="holo-card" href="open-questions.md">
+  <a class="holo-card holo-card--wide" href="open-questions/">
     <span class="holo-card-title">Open questions</span>
     <p>A running page for unresolved research questions, cross-cutting tensions, and gaps that still need sharper answers.</p>
   </a>

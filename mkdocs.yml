@@ -9,7 +9,6 @@ plugins:
   - search
 extra:
   generator: false
-copyright: A growable codex for neural holography research.
 theme:
   name: material
   favicon: assets/favicon.svg
@@ -33,9 +32,9 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  - Explore Codex:
+  - Codex:
       - Codex: readme.md
-      - Browse by Section: reading-list/index.md
+      - Explore Codex: reading-list/index.md
       - Section Views:
           - Background and Survey: reading-list/background-and-survey.md
           - CGH Algorithms: reading-list/cgh-algorithms.md
