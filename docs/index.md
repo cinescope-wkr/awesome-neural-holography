@@ -111,11 +111,3 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 3. Continue with [display-system topics](reading-list/display-systems.md) to understand hardware-side constraints.
 4. Check [labs and researchers](reading-list/labs-and-researchers.md) and [venues and videos](reading-list/venues-and-videos.md) for community context and follow-up leads.
 5. Dive into subtopics when you want a narrower thread to expand.
-
-## Sync Model
-
-<div class="holo-mini-note" markdown="1">
-The landing page is curated for browsing, but the main content still comes from
-[`README.md`](readme.md) and the repository's `subtopics/*.md` files. That keeps the docs site
-pleasant to explore without creating a second source of truth.
-</div>
