@@ -7,6 +7,7 @@
   --holo-nav-hover: rgba(8, 145, 178, 0.08);
   --holo-nav-active: rgba(8, 145, 178, 0.14);
   --holo-nav-border: rgba(148, 163, 184, 0.18);
+  --holo-nav-depth-bg: rgba(15, 23, 42, 0.025);
 }
 
 .md-typeset .holo-hero {
@@ -101,6 +102,11 @@
   padding-block: 0.8rem 0.55rem;
 }
 
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-nav--secondary > .md-nav__list > .md-nav__item > .md-nav__link {
+  font-weight: 700;
+}
+
 .md-nav--primary .md-nav__list > .md-nav__item,
 .md-nav--secondary .md-nav__list > .md-nav__item {
   margin: 0.12rem 0;
@@ -109,11 +115,18 @@
 .md-nav--primary .md-nav__link,
 .md-nav--secondary .md-nav__link {
   border-radius: 0.65rem;
+  line-height: 1.35;
   margin-inline: 0.35rem;
   padding: 0.34rem 0.7rem;
   transition:
     background-color 160ms ease,
+    box-shadow 160ms ease,
     color 160ms ease;
+}
+
+.md-nav--primary .md-nav__item--nested > .md-nav__link,
+.md-nav--secondary .md-nav__item--nested > .md-nav__link {
+  color: var(--md-default-fg-color);
 }
 
 .md-nav--primary .md-nav__link:hover,
@@ -126,14 +139,23 @@
 .md-nav--primary .md-nav__item--active > .md-nav__link,
 .md-nav--secondary .md-nav__item--active > .md-nav__link {
   background: var(--holo-nav-active);
+  box-shadow: inset 3px 0 0 var(--md-accent-fg-color);
   font-weight: 600;
+}
+
+.md-nav--primary .md-nav__list .md-nav__list,
+.md-nav--secondary .md-nav__list .md-nav__list {
+  background: var(--holo-nav-depth-bg);
+  border-left: 2px solid var(--holo-nav-border);
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 0.2rem 0.2rem 0.45rem 1rem;
+  padding: 0.2rem 0 0.2rem 0.65rem;
 }
 
 .md-sidebar--primary .md-nav--primary > .md-nav__list,
 .md-sidebar--secondary .md-nav--secondary > .md-nav__list {
-  border-left: 1px solid var(--holo-nav-border);
   margin-left: 0.35rem;
-  padding-left: 0.3rem;
+  padding-left: 0.1rem;
 }
 
 .md-typeset .md-button {

@@ -11,13 +11,11 @@
 
 A curated list of resources on **neural holographic displays**.
 
-Browse the [documentation](https://cinescope-wkr.github.io/awesome-neural-holography/).
-
 ## Notice 
 > [!NOTE]
 > This repository is an ongoing personal survey about the current landscape of holographic display researchs with AI. The original resources were partly adapted from [Brian Chao](https://bchao1.github.io)'s [`awesome-holography`](https://github.com/bchao1/awesome-holography) project. I would like to thank [Brian Chao](https://bchao1.github.io) and the authors of the following works for providing great ideas on holography display research.
 >
-> **Fork maintainer**: [Jinwoo Lee](https://cinescope-wkr.github.io) (cinescope@kaist.ac.kr)
+> **Fork maintainer**: [Jinwoo Lee](https://www.linkedin.com/in/jinwoo-lee-6424281aa/) | [HoloDDD Lab](http://www.holoddd.com) (cinescope@kaist.ac.kr)
 
 ## Overview
 **Neural holography is an inherently interdisciplinary field** where wave optics, computer graphics, computational imaging, vision, display hardware, perception, fabrication, and machine learning constantly meet. That breadth is part of what makes the area exciting, but it also means that useful ideas are often scattered across communities that do not always share the same language, venues, or evaluation habits.
@@ -85,6 +83,7 @@ This README works best as a reading map: start from the question you care about,
 This section mainly focuses on the algorithmic aspect of holographic display systems.
 
 Quick map:
+
 - `Traditional Heuristic Methods`: closed-form, geometry-driven, or display-inspired baselines.
 - `Iterative Methods`: optimize holograms by repeatedly propagating wavefields and enforcing constraints.
 - `Learned Propagation Model Methods`: learn the mismatch between ideal propagation and real hardware.
@@ -154,6 +153,7 @@ There are often mismatches between a ideal wave propagation model (e.g. ASM) wit
 
 ### Learned Hologram Synthesis Methods
 These works often assume a naive wave propagation model (i.e. the angular spectrum method (ASM)), and directly regresses complex holograms using novel CNN architectures:
+
 - [End-to-end Learning of 3D Phase-only Holograms for Holographic Display](http://cgh-v2.csail.mit.edu) (*Liang et al. 2022 | Light: Science and Applications, Nature*) 
 - [Towards real-time photorealistic 3D holography with deep neural networks](https://cdfg.mit.edu/publications/tensor-holography) (*Liang et al. 2021 | Nature, Nature*) 
 - [Diffraction-engineered holography: Beyond the depth representation limit of holographic displays](https://www.nature.com/articles/s41467-022-33728-5) (*Yang et al. 2022 | Nature Communications, Nature*)
@@ -167,6 +167,7 @@ These works often assume a naive wave propagation model (i.e. the angular spectr
 Use this section when the algorithm is not the whole story and the display system itself becomes the bottleneck.
 
 Quick map:
+
 - `Speckle Noise Reduction`: reduce coherent artifacts and improve image quality.
 - `Perception-related Research`: optimize the hologram for what observers actually see and accommodate to.
 - `Etendue Expansion`: trade off field of view and eyebox size.
@@ -215,12 +216,14 @@ The product of the field of view (FoV) and the eyebox size, the etendue, is limi
    
 ### Small Form-factor Displays
 Bulky headsets hamper the development of AR/VR. **Reducing the size** of holographic displays are important:
+
 - [Holographic Glasses for Virtual Reality](https://research.nvidia.com/publication/2022-08_holographic-glasses-virtual-reality) (*Kim et al. 2022 | SIGGRAPH, ACM*) presents a holographic display system with eyeglasses-like form factor. An optical stack of 2.5mm is achieved by combining pupil-replicating waveguide, SLMs, and geometric phase lenses.
 - [Holographic pancake optics for thin and lightweight optical see-through augmented reality](https://opg.optica.org/oe/fulltext.cfm?uri=oe-29-22-35206&id=460506) (*Cakmakci et al. 2021 | Optics Express, Optica*)
 - [Holographic Optics for Thin and Lightweight Virtual Reality](https://research.facebook.com/publications/holographic-optics-for-thin-and-lightweight-virtual-reality/) (*Maimone et al. 2021 | SIGGRAPH, ACM*)
    
 ### Compression
 **CGH compression** is also important for deploying holography technology on edge devices:
+
 - [Joint Neural Phase Retrieval and Compression for Energy- and Computation-efficient Holography on the Edge](https://www.immersivecomputinglab.org/publication/joint-neural-phase-retrieval-and-compression-for-energy-and-computation-efficient-holography-on-the-edge/) (*Wang et al. 2022 | SIGGRAPH, ACM*)
 - [Neural compression for hologram images and videos](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X-FQZ8QAAAAJ&sortby=pubdate&citation_for_view=X-FQZ8QAAAAJ:3fE2CSJIrl8C)(*Shi et al. 2022 | Optics Letters, Optica*)
 
@@ -245,12 +248,12 @@ Bulky headsets hamper the development of AR/VR. **Reducing the size** of hologra
 - [Computational Imaging Group, POSTECH](https://sites.google.com/view/shbaek/home)
 - [Reality Lab, Seoul National University](https://reality.snu.ac.kr)
 - [Optical Engineering and Quantum Electronics Lab, Seoul National University](http://oeqelab.snu.ac.kr)
-- [WeLight Lab, The University of Hong Kong](https://www.eee.hku.hk/~evanpeng/)
+- [WeLight Lab, The University of Hong Kong](https://hku.welight.fun)
 - [HoloLab, Tsinghua University](https://faculty.dpi.tsinghua.edu.cn/caoliangcai/en/index.htm)
 
 ### Industry Research Groups
 - [NVIDIA Research](https://www.nvidia.com/en-us/research/)
-- [Display Systems Research, Meta Reality Labs](https://about.meta.com/realitylabs/)
+- [Display Systems Research, Meta Reality Labs](https://tech.facebook.com/reality-labs/2022/6/passing-the-visual-turing-test-the-inside-story-of-our-quest-for-visual-realism-in-vr/)
 - [Holographic Display Research Team, Samsung Advanced Institute of Technology](https://semiconductor.samsung.com/sait/)
 
 ## Software

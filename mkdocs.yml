@@ -7,6 +7,9 @@ docs_dir: docs
 site_dir: site
 plugins:
   - search
+extra:
+  generator: false
+copyright: Maintained as a growable reading map for neural holography research.
 theme:
   name: material
   favicon: assets/favicon.svg
@@ -18,15 +21,24 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
+    - navigation.indexes
     - navigation.top
     - navigation.tracking
     - search.suggest
     - search.highlight
-    - toc.integrate
     - content.code.copy
 nav:
   - Home: index.md
-  - Reading List: readme.md
+  - Reading List:
+      - Overview: reading-list/index.md
+      - Background and Survey: reading-list/background-and-survey.md
+      - CGH Algorithms: reading-list/cgh-algorithms.md
+      - Display Systems: reading-list/display-systems.md
+      - Labs and Researchers: reading-list/labs-and-researchers.md
+      - Software: reading-list/software.md
+      - Venues and Videos: reading-list/venues-and-videos.md
+      - Full README: readme.md
   - Subtopics:
       - Holographic Projection: subtopics/holographic_projection.md
       - Speckle Reduction: subtopics/speckle_reduction.md

@@ -10,6 +10,17 @@ ALERT_KIND_MAP = {
     "WARNING": "warning",
     "CAUTION": "danger",
 }
+README_SECTION_PAGE_MAP = {
+    "reading-list/background-and-survey.md": ["Background, Theory, and Survey"],
+    "reading-list/cgh-algorithms.md": ["Computer Generated Holography (CGH) Algorithms"],
+    "reading-list/display-systems.md": ["Topics in Holographic Display Systems"],
+    "reading-list/labs-and-researchers.md": ["Labs and Researchers"],
+    "reading-list/software.md": ["Software"],
+    "reading-list/venues-and-videos.md": [
+        "Journals, Conferences, and Workshops",
+        "Talks, Lectures, Tutorials, and Videos",
+    ],
+}
 
 
 def _source_path_for(src_uri: str) -> Path | None:
@@ -42,6 +53,41 @@ def _strip_level_two_sections(markdown: str, headings: set[str]) -> str:
     if markdown.endswith("\n"):
         return "\n".join(stripped) + "\n"
     return "\n".join(stripped)
+
+
+def _extract_level_two_sections(markdown: str, headings: list[str]) -> str:
+    lines = markdown.splitlines()
+    sections: dict[str, list[str]] = {}
+    current_heading: str | None = None
+    current_lines: list[str] = []
+
+    for line in lines:
+        heading_match = re.match(r"##\s+(.*)", line)
+        if heading_match:
+            if current_heading is not None:
+                sections[current_heading] = current_lines
+            current_heading = heading_match.group(1).strip()
+            current_lines = [line]
+            continue
+
+        if current_heading is not None:
+            current_lines.append(line)
+
+    if current_heading is not None:
+        sections[current_heading] = current_lines
+
+    extracted: list[str] = []
+    for heading in headings:
+        section_lines = sections.get(heading)
+        if not section_lines:
+            continue
+        if extracted and extracted[-1] != "":
+            extracted.append("")
+        extracted.extend(section_lines)
+
+    if markdown.endswith("\n"):
+        return "\n".join(extracted) + "\n"
+    return "\n".join(extracted)
 
 
 def _convert_github_alerts(markdown: str) -> str:
@@ -85,12 +131,21 @@ def _convert_github_alerts(markdown: str) -> str:
 
 
 def on_page_read_source(page, config):
-    source_path = _source_path_for(page.file.src_uri)
+    src_uri = page.file.src_uri.replace("\\", "/")
+    source_path = _source_path_for(src_uri)
+    readme_sections = README_SECTION_PAGE_MAP.get(src_uri)
+
+    if source_path is None and readme_sections is not None:
+        source_path = ROOT / "README.md"
+
     if source_path is None:
         return None
 
     markdown = source_path.read_text(encoding="utf-8")
     if source_path.name == "README.md":
         markdown = _convert_github_alerts(markdown)
-        markdown = _strip_level_two_sections(markdown, {"Table of Contents", "Local Docs"})
+        if readme_sections is not None:
+            markdown = _extract_level_two_sections(markdown, readme_sections)
+        else:
+            markdown = _strip_level_two_sections(markdown, {"Table of Contents", "Local Docs"})
     return markdown

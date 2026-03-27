@@ -7,16 +7,16 @@ hide:
 
 <div class="holo-kicker">Awesome Neural Holography</div>
 
-# Neural Holography, Organized as a Living Reading Map
+# Neural Holography, Organized as a Growable Reading Map
 
 <p class="holo-hero-lead">
-A curated survey of neural holographic displays spanning CGH algorithms, display systems,
-research groups, and publication venues.
+A growable reading map for neural holography, connecting CGH algorithms, wave optics,
+display constraints, and the research threads that shape the field.
 </p>
 
-[Browse the reading list](readme.md){ .md-button .md-button--primary }
+[Browse the reading list](reading-list/index.md){ .md-button .md-button--primary }
 [Explore subtopics](subtopics/holographic_projection.md){ .md-button }
-[See labs and venues](readme.md#labs-and-researchers){ .md-button }
+[See labs and venues](reading-list/labs-and-researchers.md){ .md-button }
 
 </section>
 
@@ -41,32 +41,32 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 <div class="grid cards" markdown="1">
 
-- **[CGH algorithms](readme.md#computer-generated-holography-cgh-algorithms)**
+- **[CGH algorithms](reading-list/cgh-algorithms.md)**
 
   ---
 
   Traditional heuristics, iterative optimization, learned propagation models, and learned
   hologram synthesis methods in one place.
 
-- **[Display-system topics](readme.md#topics-in-holographic-display-systems)**
+- **[Display-system topics](reading-list/display-systems.md)**
 
   ---
 
   Speckle reduction, perception-aware methods, etendue expansion, HOEs, form-factor work, compression, and diffraction-order control.
 
-- **[Labs and researchers](readme.md#labs-and-researchers)**
+- **[Labs and researchers](reading-list/labs-and-researchers.md)**
 
   ---
 
   A quick map of academic and industry groups that repeatedly appear across modern neural holography work.
 
-- **[Software](readme.md#software)**
+- **[Software](reading-list/software.md)**
 
   ---
 
   Reusable libraries and frameworks that turn optics and holography papers into working research code.
 
-- **[Venues and talks](readme.md#journals-conferences-and-workshops)**
+- **[Venues and talks](reading-list/venues-and-videos.md)**
 
   ---
 
@@ -78,11 +78,11 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 <div class="grid cards" markdown="1">
 
-- **[I want the full reading list](readme.md)**
+- **[I want the reading overview](reading-list/index.md)**
 
   ---
 
-  Jump straight into the synchronized repository README.
+  Start from the split docs view of the synchronized repository reading list.
 
 - **[I want projection papers](subtopics/holographic_projection.md)**
 
@@ -106,10 +106,10 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 ## Recommended Reading Path
 
-1. Start with the [Reading List](readme.md) for the full survey view.
-2. Use the CGH algorithms section to build a method taxonomy.
-3. Continue with display-system topics to understand the hardware-side constraints.
-4. Check labs, venues, and talks when you want community context and follow-up leads.
+1. Start with the [Reading List overview](reading-list/index.md) for the survey structure.
+2. Use [CGH algorithms](reading-list/cgh-algorithms.md) to build a method taxonomy.
+3. Continue with [display-system topics](reading-list/display-systems.md) to understand hardware-side constraints.
+4. Check [labs and researchers](reading-list/labs-and-researchers.md) and [venues and videos](reading-list/venues-and-videos.md) for community context and follow-up leads.
 5. Dive into subtopics when you want a narrower thread to expand.
 
 ## Sync Model
