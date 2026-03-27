@@ -15,7 +15,7 @@ A growable codex for neural holography, connecting CGH algorithms, wave optics,
 display constraints, and the research threads that shape the field.
 </p>
 
-[Start with the full survey](readme.md){ .md-button .md-button--primary }
+[Start with the full codex](readme.md){ .md-button .md-button--primary }
 [Browse methods by section](reading-list/index.md){ .md-button }
 [Contributing and resources](contributing.md){ .md-button }
 
@@ -100,7 +100,7 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 <div class="grid cards" markdown="1">
 
-- **[I want the full survey](readme.md)**
+- **[I want the full codex](readme.md)**
 
   ---
 
@@ -140,7 +140,7 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 ## Recommended Reading Path
 
-1. Start with the [full survey](readme.md) for the complete codex.
+1. Start with the [full codex](readme.md) for the complete codex.
 2. Use [browse by section](reading-list/index.md) when you want a shorter guided entry point.
 3. Use [CGH algorithms](reading-list/cgh-algorithms.md) to build a method taxonomy.
 4. Continue with [display-system topics](reading-list/display-systems.md) to understand hardware-side constraints.

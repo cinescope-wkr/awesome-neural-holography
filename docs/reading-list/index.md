@@ -1,8 +1,8 @@
 # Browse by Section
 
-The full survey remains the default view of the codex. This page is the section-first way to scan the same material when you want a faster, category-based entry point.
+The full codex remains the default view of the project. This page is the section-first way to scan the same material when you want a faster, category-based entry point.
 
-[Open the full survey](../readme.md){ .md-button .md-button--primary }
+[Open the full codex](../readme.md){ .md-button .md-button--primary }
 
 <div class="grid cards" markdown="1">
 
@@ -51,5 +51,5 @@ The full survey remains the default view of the codex. This page is the section-
 </div>
 
 <div class="holo-mini-note" markdown="1">
-These section pages are generated from [`README.md`](../readme.md), so the full survey stays canonical while section views remain easy to browse.
+These section pages are generated from [`README.md`](../readme.md), so the full codex stays canonical while section views remain easy to browse.
 </div>

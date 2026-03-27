@@ -32,7 +32,7 @@ theme:
 nav:
   - Home: index.md
   - Codex:
-      - Full Survey: readme.md
+      - Full Codex: readme.md
       - Browse by Section: reading-list/index.md
       - Section Views:
           - Background and Survey: reading-list/background-and-survey.md
