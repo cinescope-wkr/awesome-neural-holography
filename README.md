@@ -1,4 +1,4 @@
-# awesome-neural-holography
+# Neural Holography Codex
 
 <p align="center">
   <a href="https://cinescope-wkr.github.io/awesome-neural-holography/">

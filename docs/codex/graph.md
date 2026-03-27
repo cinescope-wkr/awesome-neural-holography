@@ -6,7 +6,7 @@ view should expose those relationships, not replace the readable survey.
 
 ## Design Goals
 
-1. Keep the full codex as the canonical long-form view.
+1. Keep the codex as the canonical long-form view.
 2. Make graph views derived, typed, filterable, and local-first.
 3. Model scientific relationships explicitly instead of treating every link as the same.
 4. Let users move between papers, methods, labs, systems, and software without losing context.

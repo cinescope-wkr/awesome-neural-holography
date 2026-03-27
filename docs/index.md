@@ -16,7 +16,7 @@ methods, display hardware, human perception, and the research threads that shape
 the field.
 </p>
 
-[Start with the full codex](readme.md){ .md-button .md-button--primary }
+[Start with the codex](readme.md){ .md-button .md-button--primary }
 [Browse methods by section](reading-list/index.md){ .md-button }
 [Contributing and resources](contributing.md){ .md-button }
 
@@ -55,6 +55,10 @@ of reusable methods, sharper comparisons, and more cross-pollination between res
 otherwise stay separated by disciplinary boundaries. In that sense, it is also a reminder that the
 [wonderland](https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf) Ivan Sutherland
 imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to be built.
+
+</div>
+
+<div class="holo-home-grid-shell" markdown="1">
 
 ## What You Will Find Here
 
@@ -103,7 +107,7 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 <div class="grid cards" markdown="1">
 
-- **[I want the full codex](readme.md)**
+- **[I want the codex](readme.md)**
 
   ---
 
@@ -141,16 +145,21 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 </div>
 
+</div>
+
+<div class="holo-home-shell" markdown="1">
+
 ## Recommended Reading Path
 
 <div class="holo-reading-path" markdown="1">
 
-1. Start with the [full codex](readme.md) for the complete codex.
-2. Use [browse by section](reading-list/index.md) when you want a shorter guided entry point.
-3. Use [CGH algorithms](reading-list/cgh-algorithms.md) to build a method taxonomy.
-4. Continue with [display-system topics](reading-list/display-systems.md) to understand hardware-side constraints.
-5. Check [software](reading-list/software.md), [labs and research groups](reading-list/labs-and-researchers.md), [venues and communities](reading-list/venues-and-communities.md), and [media and resources](reading-list/media-and-resources.md) for implementation paths and community context.
-6. Dive into subtopics when you want a narrower thread to expand.
+Start with the complete map, then branch outward by purpose.
+
+1. Begin with the [codex](readme.md) for the full long-form survey.
+2. Use [browse by section](reading-list/index.md) when you want a faster category-first route.
+3. Build method intuition through [CGH algorithms](reading-list/cgh-algorithms.md) and [display systems](reading-list/display-systems.md).
+4. Continue with [software](reading-list/software.md) and [labs and research groups](reading-list/labs-and-researchers.md) to connect ideas to implementation and people.
+5. Use [venues and communities](reading-list/venues-and-communities.md), [media and resources](reading-list/media-and-resources.md), and the subtopics pages when you want follow-up context or a narrower thread.
 
 </div>
 
