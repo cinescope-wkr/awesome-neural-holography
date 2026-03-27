@@ -1,8 +1,8 @@
 :root {
   --holo-hero-bg:
-    radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), transparent 34%),
-    radial-gradient(circle at top right, rgba(34, 211, 238, 0.16), transparent 28%),
-    linear-gradient(180deg, #06101c 0%, #0d1b2a 100%);
+    radial-gradient(circle at top left, rgba(68, 138, 255, 0.22), transparent 34%),
+    radial-gradient(circle at top right, rgba(38, 198, 218, 0.18), transparent 26%),
+    linear-gradient(180deg, #07111f 0%, #0d1b2a 100%);
   --holo-hero-fg: #f4fbff;
   --holo-nav-hover: rgba(8, 145, 178, 0.08);
   --holo-nav-active: rgba(8, 145, 178, 0.14);
@@ -65,9 +65,9 @@ body {
 
 .md-typeset .holo-hero {
   background: var(--holo-hero-bg);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  border: 1px solid rgba(148, 163, 184, 0.18);
   border-radius: 1rem;
-  box-shadow: 0 14px 34px rgba(2, 8, 23, 0.14);
+  box-shadow: 0 18px 45px rgba(2, 8, 23, 0.18);
   color: var(--holo-hero-fg);
   margin: 0 auto 1.6rem;
   max-width: 58rem;
@@ -88,26 +88,86 @@ body {
 
 .md-typeset .holo-hero h1 {
   font-size: var(--holo-home-hero-title-size);
-  font-weight: 440;
-  letter-spacing: -0.028em;
-  line-height: 1.1;
+  font-weight: 425;
+  letter-spacing: -0.024em;
+  line-height: 1.12;
+  margin-bottom: 0.72rem;
 }
 
 .md-typeset .holo-hero-lead {
   font-size: var(--holo-home-hero-lead-size);
-  font-weight: 390;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  opacity: 0.9;
+  font-weight: 385;
+  letter-spacing: -0.006em;
+  line-height: 1.58;
+  margin-bottom: 1.08rem;
+  max-width: 44rem;
+  opacity: 0.88;
 }
 
 .md-typeset .holo-kicker {
   color: rgba(244, 251, 255, 0.72);
   font-size: var(--holo-home-kicker-size);
-  font-weight: var(--holo-weight-strong);
-  letter-spacing: 0.12em;
-  margin-bottom: 0.6rem;
+  font-weight: 620;
+  letter-spacing: 0.11em;
+  margin-bottom: 0.55rem;
   text-transform: uppercase;
+}
+
+.md-typeset .holo-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.md-typeset .holo-hero-link {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  color: rgba(240, 249, 255, 0.9);
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  line-height: 1;
+  margin: 0;
+  padding: 0.72rem 1rem;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease;
+}
+
+.md-typeset .holo-hero-link:hover,
+.md-typeset .holo-hero-link:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(224, 242, 254, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+  color: rgba(248, 253, 255, 0.96);
+}
+
+.md-typeset .holo-hero-link--primary {
+  background: rgba(244, 249, 252, 0.94);
+  border-color: rgba(224, 242, 254, 0.22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.74),
+    0 6px 14px rgba(2, 8, 23, 0.08);
+  color: rgba(8, 47, 73, 0.95);
+}
+
+.md-typeset .holo-hero-link--primary:hover,
+.md-typeset .holo-hero-link--primary:focus {
+  background: rgba(248, 250, 252, 0.98);
+  border-color: rgba(224, 242, 254, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.18);
+  color: rgba(8, 47, 73, 0.98);
 }
 
 .md-typeset .holo-intro {
@@ -116,6 +176,7 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: 1rem;
   box-shadow:
+    -12px 0 24px -24px rgba(56, 189, 248, 0.3),
     0 14px 30px rgba(15, 23, 42, 0.065),
     0 1px 2px rgba(15, 23, 42, 0.03);
   margin: 0 0 2rem;
@@ -154,19 +215,17 @@ body {
     border-color 180ms ease,
     background-color 180ms ease,
     color 180ms ease,
-    transform 180ms ease,
     box-shadow 180ms ease;
 }
 
 .md-typeset .holo-home-jumpnav a:hover,
 .md-typeset .holo-home-jumpnav a:focus {
-  background: rgba(240, 249, 255, 0.9);
-  border-color: rgba(125, 211, 252, 0.28);
+  background: rgba(246, 250, 253, 0.92);
+  border-color: rgba(191, 219, 254, 0.34);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.7),
-    0 6px 16px rgba(15, 23, 42, 0.05);
-  color: rgba(3, 105, 161, 0.9);
-  transform: translateY(-1px);
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 0 0 1px rgba(255, 255, 255, 0.44);
+  color: rgba(15, 23, 42, 0.78);
 }
 
 .md-typeset h2[id],
@@ -194,12 +253,12 @@ body {
 
 .md-typeset .holo-intro::before {
   background:
-    linear-gradient(90deg, rgba(8, 145, 178, 0.16), rgba(8, 145, 178, 0.04) 42%, transparent 78%);
+    linear-gradient(180deg, rgba(125, 211, 252, 0.2), rgba(56, 189, 248, 0.08) 34%, rgba(8, 145, 178, 0.03) 72%, transparent);
   content: "";
   inset: 0 auto 0 0;
   pointer-events: none;
   position: absolute;
-  width: 0.45rem;
+  width: 0.4rem;
 }
 
 .md-typeset .holo-intro > p {
@@ -250,13 +309,26 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.14);
   border-radius: 1rem;
   box-shadow:
+    -12px 0 24px -24px rgba(56, 189, 248, 0.24),
     0 10px 24px rgba(15, 23, 42, 0.045),
     0 1px 2px rgba(15, 23, 42, 0.025);
   color: rgba(15, 23, 42, 0.72);
   font-size: var(--holo-home-body-size);
   line-height: 1.72;
   margin-bottom: 2.8rem;
+  overflow: hidden;
   padding: 1rem 1.1rem 1.05rem;
+  position: relative;
+}
+
+.md-typeset .holo-acknowledgement::before {
+  background:
+    linear-gradient(180deg, rgba(125, 211, 252, 0.16), rgba(56, 189, 248, 0.07) 36%, rgba(14, 165, 233, 0.02) 78%, transparent);
+  content: "";
+  inset: 0 auto 0 0;
+  pointer-events: none;
+  position: absolute;
+  width: 0.34rem;
 }
 
 .md-typeset .holo-acknowledgement p {
@@ -273,10 +345,23 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.14);
   border-radius: 1rem;
   box-shadow:
+    -12px 0 24px -24px rgba(56, 189, 248, 0.24),
     0 10px 24px rgba(15, 23, 42, 0.05),
     0 1px 2px rgba(15, 23, 42, 0.03);
   margin-bottom: 2.9rem;
+  overflow: hidden;
   padding: 1rem 1.15rem 1rem 1.1rem;
+  position: relative;
+}
+
+.md-typeset .holo-reading-path::before {
+  background:
+    linear-gradient(180deg, rgba(125, 211, 252, 0.15), rgba(56, 189, 248, 0.06) 34%, rgba(14, 165, 233, 0.02) 76%, transparent);
+  content: "";
+  inset: 0 auto 0 0;
+  pointer-events: none;
+  position: absolute;
+  width: 0.34rem;
 }
 
 .md-typeset .holo-reading-path > p:first-child {
@@ -363,7 +448,8 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.16);
   border-radius: 1rem;
   box-shadow:
-    0 10px 20px rgba(15, 23, 42, 0.04),
+    -12px 0 24px -24px rgba(56, 189, 248, 0.24),
+    0 6px 14px rgba(15, 23, 42, 0.03),
     0 1px 2px rgba(15, 23, 42, 0.03);
   color: var(--md-default-fg-color);
   display: flex;
@@ -375,21 +461,22 @@ body {
   position: relative;
   text-decoration: none;
   transition:
-    transform 160ms ease,
     box-shadow 160ms ease,
     border-color 160ms ease,
-    color 180ms ease;
+    color 180ms ease,
+    background-color 180ms ease;
 }
 
 .md-typeset .holo-card::before {
   background:
-    radial-gradient(circle at 12% 14%, rgba(255, 255, 255, 0.92), rgba(191, 219, 254, 0.16) 24%, transparent 48%);
+    linear-gradient(180deg, rgba(125, 211, 252, 0.14), rgba(56, 189, 248, 0.05) 34%, rgba(14, 165, 233, 0.015) 78%, transparent);
   content: "";
-  inset: 0;
-  opacity: 0.85;
+  inset: 0 auto 0 0;
+  opacity: 0.88;
   pointer-events: none;
   position: absolute;
   transition: opacity 180ms ease;
+  width: 0.3rem;
 }
 
 .md-typeset .holo-card::after {
@@ -406,13 +493,14 @@ body {
 
 .md-typeset .holo-card:hover,
 .md-typeset .holo-card:focus {
-  border-color: rgba(125, 211, 252, 0.34);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(247, 250, 252, 0.96));
+  border-color: rgba(191, 219, 254, 0.34);
   box-shadow:
-    0 18px 30px rgba(15, 23, 42, 0.08),
+    0 10px 22px rgba(15, 23, 42, 0.05),
     0 1px 2px rgba(15, 23, 42, 0.04),
-    0 0 0 1px rgba(224, 242, 254, 0.46);
+    0 0 0 1px rgba(239, 246, 255, 0.72);
   color: var(--md-default-fg-color);
-  transform: translateY(-3px);
 }
 
 .md-typeset .holo-card:hover::before,
@@ -422,8 +510,7 @@ body {
 
 .md-typeset .holo-card:hover::after,
 .md-typeset .holo-card:focus::after {
-  opacity: 1;
-  transform: scaleX(1.02);
+  opacity: 0.92;
 }
 
 .md-typeset .holo-card-title {
@@ -526,6 +613,17 @@ body {
   color: rgba(15, 23, 42, 0.78);
   font-weight: 515;
   letter-spacing: -0.004em;
+}
+
+.md-sidebar--primary .md-nav__item:has(> .md-nav__toggle + .md-nav__container > a[href$="reading-list/"]) > .md-nav__container > a[href$="reading-list/"] .md-ellipsis,
+.md-sidebar--primary .md-nav__item:has(> .md-nav__toggle + .md-nav__container > a[href$="./"]) > .md-nav__container > a[href$="./"] .md-ellipsis {
+  font-size: 0;
+}
+
+.md-sidebar--primary .md-nav__item:has(> .md-nav__toggle + .md-nav__container > a[href$="reading-list/"]) > .md-nav__container > a[href$="reading-list/"] .md-ellipsis::after,
+.md-sidebar--primary .md-nav__item:has(> .md-nav__toggle + .md-nav__container > a[href$="./"]) > .md-nav__container > a[href$="./"] .md-ellipsis::after {
+  content: "Explore Codex";
+  font-size: 0.78rem;
 }
 
 .md-sidebar--primary .md-nav__list .md-nav__list .md-nav__link {
@@ -795,59 +893,16 @@ body {
 
 .md-typeset .md-button.holo-soft-button:hover,
 .md-typeset .md-button.holo-soft-button:focus {
-  background: rgba(240, 249, 255, 0.9);
-  border-color: rgba(125, 211, 252, 0.26);
+  background: rgba(246, 250, 253, 0.94);
+  border-color: rgba(191, 219, 254, 0.3);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.64),
-    0 8px 18px rgba(15, 23, 42, 0.05);
-  color: rgba(3, 105, 161, 0.88);
+    inset 0 1px 0 rgba(255, 255, 255, 0.68),
+    0 0 0 1px rgba(255, 255, 255, 0.42);
+  color: rgba(15, 23, 42, 0.82);
 }
 
 .md-typeset .md-button.holo-browse-cta {
   margin-bottom: 1.5rem;
-}
-
-.md-typeset .holo-hero .md-button {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  color: rgba(240, 249, 255, 0.92);
-  transition:
-    background-color 180ms ease,
-    box-shadow 180ms ease,
-    border-color 180ms ease,
-    color 180ms ease,
-    transform 180ms ease;
-}
-
-.md-typeset .holo-hero .md-button--primary {
-  background: rgba(240, 249, 255, 0.92);
-  border-color: rgba(224, 242, 254, 0.26);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.62),
-    0 10px 20px rgba(2, 8, 23, 0.12);
-  color: rgba(8, 47, 73, 0.94);
-}
-
-.md-typeset .holo-hero .md-button:hover,
-.md-typeset .holo-hero .md-button:focus {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(186, 230, 253, 0.28);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 8px 18px rgba(2, 8, 23, 0.12);
-  color: rgba(248, 253, 255, 0.98);
-  transform: translateY(-1px);
-}
-
-.md-typeset .holo-hero .md-button--primary:hover,
-.md-typeset .holo-hero .md-button--primary:focus {
-  background: rgba(248, 250, 252, 0.96);
-  border-color: rgba(186, 230, 253, 0.32);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 10px 22px rgba(2, 8, 23, 0.14);
-  color: rgba(12, 74, 110, 0.94);
 }
 
 .md-typeset h2,
@@ -938,7 +993,11 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  margin-inline: auto;
+  max-width: 76rem;
+  padding-inline: 1.4rem;
   position: relative;
+  width: 100%;
 }
 
 .md-copyright {
@@ -1010,6 +1069,7 @@ body {
   .md-footer-meta__inner {
     align-items: flex-start;
     flex-direction: column;
+    padding-inline: 0.6rem;
   }
 
   .md-footer-meta__inner::after {
@@ -1042,7 +1102,8 @@ body {
   }
 
   .md-typeset .holo-hero h1 {
-    line-height: 1.12;
+    line-height: 1.14;
+    margin-bottom: 0.62rem;
   }
 
   .md-typeset .holo-hero-lead {
@@ -1052,6 +1113,21 @@ body {
 
   .md-typeset .holo-kicker {
     letter-spacing: 0.1em;
+  }
+
+  .md-typeset .holo-hero-actions {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .md-typeset .holo-hero-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .md-typeset .holo-hero-link + .holo-hero-link {
+    margin-top: 0.62rem;
   }
 
   .md-typeset .holo-intro {
@@ -1090,13 +1166,6 @@ body {
     border-radius: 0.9rem;
     margin-bottom: 2.3rem;
     padding: 0.95rem 0.95rem 0.92rem;
-  }
-
-  .md-typeset .holo-hero .md-button {
-    display: block;
-    margin: 0.55rem 0 0;
-    text-align: center;
-    width: 100%;
   }
 
   .md-typeset .grid.cards > ul,

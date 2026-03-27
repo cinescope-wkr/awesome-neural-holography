@@ -8,7 +8,7 @@ hide:
 
 <div class="holo-kicker">Awesome Neural Holography</div>
 
-# Neural Holography, Organized as a Growable Codex
+# Neural Holography, Organized as a Growable Research Codex
 
 <p class="holo-hero-lead">
 A growable codex for neural holography, connecting CGH algorithms, learning
@@ -16,9 +16,11 @@ methods, display hardware, human perception, and the research threads that shape
 the field.
 </p>
 
-[Start with the codex](readme.md){ .md-button .md-button--primary }
-[Browse methods by section](reading-list/index.md){ .md-button }
-[Contributing](contributing.md){ .md-button }
+<nav class="holo-hero-actions" aria-label="Hero navigation">
+  <a class="holo-hero-link holo-hero-link--primary" href="readme/">Start with the codex</a>
+  <a class="holo-hero-link" href="reading-list/">Browse methods by section</a>
+  <a class="holo-hero-link" href="contributing/">Contributing</a>
+</nav>
 
 </section>
 
