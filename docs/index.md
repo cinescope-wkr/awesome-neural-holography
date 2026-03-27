@@ -24,6 +24,14 @@ the field.
 
 <div class="holo-home-shell" markdown="1">
 
+<nav class="holo-home-jumpnav" aria-label="Home section navigation">
+  <a href="#why-this-exists">Why This Exists</a>
+  <a href="#what-you-will-find-here">What You Will Find Here</a>
+  <a href="#find-what-you-need">Find What You Need</a>
+  <a href="#recommended-reading-path">Recommended Reading Path</a>
+  <a href="#acknowledgement">Acknowledgement</a>
+</nav>
+
 <div class="holo-intro" markdown="1">
 
 Neural holographic displays sit at the intersection of computational holography, wave optics,
@@ -32,17 +40,9 @@ with physical systems. This codex is an ongoing personal survey of that broader 
 as a docs-first path from foundational papers and algorithm families to system-level constraints,
 labs, software, and adjacent subtopics.
 
-<div class="holo-intro-meta" markdown="1">
-
-This alpha-stage personal survey was adapted in part from
-[Brian Chao's awesome-holography](https://github.com/bchao1/awesome-holography) and is maintained
-by [Jinwoo Lee](mailto:cinescope@kaist.ac.kr).
-
 </div>
 
-</div>
-
-## Why This Exists
+## Why This Exists { #why-this-exists }
 
 **Neural holography is an inherently interdisciplinary field** where optics, graphics, imaging,
 vision, display systems, fabrication, perception, and machine learning all overlap. In practice,
@@ -60,7 +60,7 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 <div class="holo-home-grid-shell" markdown="1">
 
-## What You Will Find Here
+## What You Will Find Here { #what-you-will-find-here }
 
 <div class="grid cards" markdown="1">
 
@@ -103,7 +103,7 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 </div>
 
-## Find What You Need
+## Find What You Need { #find-what-you-need }
 
 <div class="grid cards" markdown="1">
 
@@ -149,7 +149,7 @@ imagined in *The Ultimate Display* is still shimmering ahead of us, waiting to b
 
 <div class="holo-home-shell" markdown="1">
 
-## Recommended Reading Path
+## Recommended Reading Path { #recommended-reading-path }
 
 <div class="holo-reading-path" markdown="1">
 
@@ -160,6 +160,24 @@ Start with the complete map, then branch outward by purpose.
 3. Build method intuition through [CGH algorithms](reading-list/cgh-algorithms.md) and [display systems](reading-list/display-systems.md).
 4. Continue with [software](reading-list/software.md) and [labs and research groups](reading-list/labs-and-researchers.md) to connect ideas to implementation and people.
 5. Use [venues and communities](reading-list/venues-and-communities.md), [media and resources](reading-list/media-and-resources.md), and the subtopics pages when you want follow-up context or a narrower thread.
+
+</div>
+
+</div>
+
+<div class="holo-home-shell" markdown="1">
+
+## Acknowledgement { #acknowledgement }
+
+<div class="holo-acknowledgement" markdown="1">
+
+This codex began as an ongoing personal survey of neural holographic display research and was
+adapted in part from [Brian Chao's awesome-holography](https://github.com/bchao1/awesome-holography),
+whose structure and collected references helped shape this project.
+
+Many thanks to Brian Chao and to the authors, maintainers, and researchers whose papers, codebases,
+talks, and shared resources make the field easier to study. The current codex is maintained by
+[Jinwoo Lee](mailto:cinescope@kaist.ac.kr).
 
 </div>
 

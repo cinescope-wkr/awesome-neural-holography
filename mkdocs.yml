@@ -33,9 +33,9 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  - Browse:
+  - Codex:
       - Codex: readme.md
-      - Browse by Section: reading-list/index.md
+      - Browse: reading-list/index.md
       - Section Views:
           - Background and Survey: reading-list/background-and-survey.md
           - CGH Algorithms: reading-list/cgh-algorithms.md

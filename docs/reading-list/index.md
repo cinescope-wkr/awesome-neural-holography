@@ -1,8 +1,8 @@
-# Browse by Section
+# Browse
 
 The codex remains the default view of the project. This page is the section-first way to scan the same material when you want a faster, category-based entry point.
 
-[Open the codex](../readme.md){ .md-button .md-button--primary .holo-soft-button }
+[Open the codex](../readme.md){ .md-button .md-button--primary .holo-soft-button .holo-browse-cta }
 
 <div class="grid cards" markdown="1">
 

@@ -43,6 +43,10 @@ body {
   min-height: calc(100vh - 11rem);
 }
 
+.md-content__inner {
+  padding-bottom: 3.2rem;
+}
+
 .md-typeset {
   font-weight: var(--holo-weight-text);
 }
@@ -117,9 +121,54 @@ body {
   max-width: 52rem;
 }
 
+.md-typeset .holo-home-jumpnav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.md-typeset .holo-home-jumpnav a {
+  background: rgba(248, 250, 252, 0.84);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02);
+  color: rgba(15, 23, 42, 0.72);
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 490;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  padding: 0.55rem 0.78rem;
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.md-typeset .holo-home-jumpnav a:hover,
+.md-typeset .holo-home-jumpnav a:focus {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(8, 145, 178, 0.16);
+  box-shadow:
+    0 6px 16px rgba(15, 23, 42, 0.045),
+    0 1px 2px rgba(15, 23, 42, 0.025);
+  color: rgba(15, 23, 42, 0.9);
+  transform: translateY(-1px);
+}
+
+.md-typeset h2[id],
+.md-typeset h3[id] {
+  scroll-margin-top: 4.8rem;
+}
+
 .md-typeset .holo-home-grid-shell {
   margin: 0 auto;
-  max-width: 64rem;
+  max-width: 70rem;
 }
 
 .md-typeset .holo-intro::before {
@@ -150,6 +199,29 @@ body {
 
 .md-typeset .holo-intro-meta p {
   margin: 0;
+}
+
+.md-typeset .holo-acknowledgement {
+  background:
+    linear-gradient(180deg, rgba(249, 250, 251, 0.95), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 1rem;
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, 0.045),
+    0 1px 2px rgba(15, 23, 42, 0.025);
+  color: rgba(15, 23, 42, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin-bottom: 2.8rem;
+  padding: 1rem 1.1rem 1.05rem;
+}
+
+.md-typeset .holo-acknowledgement p {
+  margin: 0;
+}
+
+.md-typeset .holo-acknowledgement p + p {
+  margin-top: 0.8rem;
 }
 
 .md-typeset .holo-reading-path {
@@ -281,6 +353,15 @@ body {
 }
 
 @media screen and (min-width: 60em) {
+  .md-sidebar--secondary:has(.md-nav--secondary:not(:has(.md-nav__list > .md-nav__item))) {
+    display: none;
+  }
+
+  .md-typeset .holo-home-grid-shell .grid.cards {
+    gap: 0.7rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md-typeset .grid.cards {
     perspective: 1200px;
   }
@@ -497,6 +578,8 @@ body {
 }
 
 .md-sidebar--secondary .md-nav__item--active > .md-nav__link {
+  background:
+    linear-gradient(90deg, rgba(34, 211, 238, 0.16), rgba(34, 211, 238, 0.05) 72%, transparent);
   box-shadow:
     inset 3px 0 0 var(--md-accent-fg-color),
     0 1px 0 rgba(15, 23, 42, 0.04);
@@ -606,6 +689,10 @@ body {
   color: var(--md-accent-fg-color);
 }
 
+.md-typeset .md-button.holo-browse-cta {
+  margin-bottom: 1.5rem;
+}
+
 .md-typeset .holo-hero .md-button {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.03));
@@ -671,23 +758,25 @@ body {
 
 .md-top {
   align-items: center;
-  background: rgba(255, 255, 255, 0.64);
-  backdrop-filter: blur(16px) saturate(135%);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 250, 252, 0.7));
+  backdrop-filter: blur(18px) saturate(145%);
+  border: 1px solid rgba(148, 163, 184, 0.16);
   border-radius: 999px;
   box-shadow:
-    0 8px 20px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.46),
+    0 10px 24px rgba(15, 23, 42, 0.1),
     0 1px 2px rgba(15, 23, 42, 0.04);
-  color: rgba(15, 23, 42, 0.78);
+  color: rgba(15, 23, 42, 0.82);
   display: inline-flex;
-  font-size: 0.72rem;
-  font-weight: 500;
-  gap: 0.42rem;
+  font-size: 0.74rem;
+  font-weight: 535;
+  gap: 0.46rem;
   justify-content: center;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
   line-height: 1;
   opacity: 0.96;
-  padding: 0.62rem 0.88rem 0.6rem;
+  padding: 0.66rem 0.96rem 0.64rem;
   text-align: center;
   white-space: nowrap;
   transition:
@@ -702,35 +791,37 @@ body {
 
 .md-top:hover,
 .md-top:focus {
-  background: rgba(255, 255, 255, 0.78);
-  border-color: rgba(8, 145, 178, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 253, 255, 0.82));
+  border-color: rgba(8, 145, 178, 0.18);
   box-shadow:
-    0 12px 28px rgba(15, 23, 42, 0.1),
-    0 2px 6px rgba(15, 23, 42, 0.05);
+    inset 0 1px 0 rgba(255, 255, 255, 0.52),
+    0 14px 30px rgba(15, 23, 42, 0.12),
+    0 2px 8px rgba(15, 23, 42, 0.05);
   color: var(--md-accent-fg-color);
 }
 
 .md-top:active {
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 .md-top svg {
   flex: 0 0 auto;
-  height: 0.9rem;
+  height: 0.96rem;
   margin: 0;
-  opacity: 0.88;
+  opacity: 0.9;
   transform: translate3d(0, 0, 0);
   transition:
     opacity 220ms ease,
     transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
   vertical-align: middle;
-  width: 0.9rem;
+  width: 0.96rem;
 }
 
 .md-top:hover svg,
 .md-top:focus svg {
   opacity: 1;
-  transform: translate3d(0, -0.02rem, 0);
+  transform: translate3d(0, -0.04rem, 0);
 }
 
 .md-footer-meta__inner {
@@ -741,11 +832,26 @@ body {
   position: relative;
 }
 
+.md-copyright {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.md-copyright__highlight {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1rem;
+  font-weight: 540;
+  letter-spacing: 0.01em;
+}
+
 .md-footer-meta__inner::after {
-  color: rgba(255, 255, 255, 0.58);
+  color: rgba(255, 255, 255, 0.46);
   content: "\00A9 2026 Jinwoo Lee";
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
+  font-size: 0.64rem;
+  font-weight: 430;
+  letter-spacing: 0.06em;
   white-space: nowrap;
 }
 
@@ -840,6 +946,16 @@ body {
     max-width: 100%;
   }
 
+  .md-typeset .holo-home-jumpnav {
+    gap: 0.42rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .md-typeset .holo-home-jumpnav a {
+    font-size: 0.74rem;
+    padding: 0.5rem 0.68rem;
+  }
+
   .md-typeset .holo-home-grid-shell {
     max-width: 100%;
   }
@@ -899,12 +1015,14 @@ body {
 
   .md-content__inner {
     margin-top: 0.4rem;
-    padding-bottom: 2.4rem;
+    padding-bottom: 2.8rem;
   }
 
   .md-top {
-    background: rgba(255, 255, 255, 0.72);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 250, 252, 0.76));
     box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
       0 8px 18px rgba(15, 23, 42, 0.08),
       0 1px 3px rgba(15, 23, 42, 0.04);
   }
