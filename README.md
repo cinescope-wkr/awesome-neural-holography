@@ -305,4 +305,4 @@ This section tracks frequently referenced publication venues in holography and n
 ## Media and Resources
 ### Talks and Media
 - [Design of Holographic Display Systems based on Artificial Intelligence](https://www.youtube.com/watch?v=Xcg2krkxk3I&t=4253s) (Suyeon Choi, Silicon Valley ACM SIGGRAPH 2022)
-- [Could Deep Learning Improve Visual Quality in Holographic Displays?](https://www.youtube.com/watch?v=lbgRke4H_HA)(Optica, 2022)
+- [Could Deep Learning Improve Visual Quality in Holographic Displays?](https://www.youtube.com/watch?v=lbgRke4H_HA) (Optica, 2022)

@@ -397,6 +397,7 @@ body {
   margin: -0.55rem -0.35rem 0.35rem;
   padding: 0.9rem 0.7rem 0.65rem;
   position: sticky;
+  text-align: center;
   top: -0.55rem;
   text-transform: uppercase;
   transition:
