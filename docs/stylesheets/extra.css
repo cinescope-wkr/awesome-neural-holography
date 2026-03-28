@@ -78,11 +78,15 @@
 
 html {
   background: var(--md-footer-bg-color);
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   background: transparent;
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .md-container {
@@ -90,6 +94,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .md-header,
@@ -478,12 +484,8 @@ body {
 
 .md-typeset .holo-home-section::before {
   content: "";
-  inset-block: 0;
-  left: 50%;
+  inset: 0 -100vw;
   position: absolute;
-  transform: translateX(-50%);
-  width: 100vw;
-  width: 100dvw;
   z-index: -1;
 }
 
@@ -1511,12 +1513,15 @@ body {
 
 @media screen and (max-width: 76.1875em) {
   .md-main,
-  .md-main__inner,
-  .md-content,
-  .md-content__inner {
+  .md-main__inner {
     max-width: 100%;
     overflow-x: hidden;
     overflow-x: clip;
+  }
+
+  .md-content,
+  .md-content__inner {
+    max-width: 100%;
   }
 
   .md-typeset :where(img, svg, video, canvas, iframe) {
