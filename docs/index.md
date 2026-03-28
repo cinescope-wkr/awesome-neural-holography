@@ -79,37 +79,30 @@ waiting to be built.
   <a class="holo-card" href="reading-list/cgh-algorithms/">
     <span class="holo-card-title">CGH algorithms</span>
     <p>Traditional heuristics, iterative optimization, learned propagation models, and learned hologram synthesis methods in one place.</p>
-    <span class="holo-card-meta">Explore section</span>
   </a>
   <a class="holo-card" href="reading-list/display-systems/">
     <span class="holo-card-title">Display-system topics</span>
     <p>Speckle reduction, perception-aware methods, etendue expansion, HOEs, form-factor work, compression, and diffraction-order control.</p>
-    <span class="holo-card-meta">Explore section</span>
   </a>
   <a class="holo-card" href="reading-list/software/">
     <span class="holo-card-title">Software</span>
     <p>Reusable libraries and frameworks that turn optics and holography papers into working research code.</p>
-    <span class="holo-card-meta">Explore section</span>
   </a>
   <a class="holo-card" href="reading-list/labs-and-researchers/">
     <span class="holo-card-title">Labs and research groups</span>
     <p>A guide to the academic labs and research groups behind many of the seminal contributions in modern neural holography.</p>
-    <span class="holo-card-meta">Explore section</span>
   </a>
   <a class="holo-card" href="reading-list/venues-and-communities/">
     <span class="holo-card-title">Venues and communities</span>
     <p>Journals, conferences, workshops, and recurring research communities that shape the field.</p>
-    <span class="holo-card-meta">Explore section</span>
   </a>
   <a class="holo-card" href="reading-list/media-and-resources/">
     <span class="holo-card-title">Media and resources</span>
     <p>Talks, lectures, and other supporting material that make the research landscape easier to follow.</p>
-    <span class="holo-card-meta">Explore section</span>
   </a>
   <a class="holo-card holo-card--wide" href="open-questions/">
     <span class="holo-card-title">Open questions</span>
     <p>A running page for unresolved research questions, cross-cutting tensions, and gaps that still need sharper answers.</p>
-    <span class="holo-card-meta">View open questions</span>
   </a>
 </div>
 
