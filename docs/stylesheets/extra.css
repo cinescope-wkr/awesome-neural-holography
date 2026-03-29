@@ -1534,6 +1534,47 @@ body {
     transform: translateX(calc(-1 * var(--holo-drawer-width)));
   }
 
+  /* Keep mobile/tablet drawer focused on one plain navigation list. */
+  .md-header__source,
+  .md-sidebar--primary .md-nav__source {
+    display: none;
+  }
+
+  .md-sidebar--primary .md-nav__title .md-nav__button.md-logo {
+    display: none;
+  }
+
+  .md-sidebar--primary .md-nav__title[for="__drawer"] {
+    padding-inline-start: 0.72rem;
+  }
+
+  .md-sidebar--primary .md-nav__title[for^="__nav_"] {
+    display: none;
+  }
+
+  .md-sidebar--primary .md-nav__container > label.md-nav__link,
+  .md-sidebar--primary .md-nav__item > .md-nav__link > .md-nav__icon {
+    display: none;
+  }
+
+  .md-sidebar--primary .md-nav--secondary {
+    display: none;
+  }
+
+  .md-sidebar--primary .md-nav__item--nested > .md-nav {
+    display: block;
+    inset: auto;
+    margin: 0;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    pointer-events: auto;
+    position: static;
+    transform: none;
+    transition: none;
+    visibility: visible;
+  }
+
   .md-main,
   .md-main__inner {
     max-width: 100%;
